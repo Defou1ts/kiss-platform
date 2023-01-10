@@ -1,0 +1,63 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap");
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--gray-50);
+	background: var(--white);
+	font-family: var(--font-family);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	/*Common*/
+	--font-family: "Nunito", sans-serif;
+
+	/*Brand Colours*/
+	--brand-red: #db4d45;
+	--brand-green: #6bc2bb;
+	--brand-yellow: #ffc639;
+	--brand-black: #333333;
+
+	/*Brand and Complementary Color Variants*/
+	--brand-red-vartiant-01: #c5453e;
+	--brand-red-vartiant-02: #af3d37;
+	--brand-green-vartiant-01: #60aea8;
+	--brand-green-vartiant-02: #559b95;
+	--brand-yellow-vartiant-01: #e5b233;
+	--brand-yellow-vartiant-02: #cc9e2d;
+	--white: #ffffff;
+
+	/*Grayscale*/
+	--gray-5: #fafafc;
+	--gray-10: #e7e9ed;
+	--gray-20: #ced2db;
+	--gray-30: #b6bcc9;
+	--gray-40: #9ea5b8;
+	--gray-50: #858fa6;
+
+	/*Semantic Color*/
+	--support-message: #4070f4;
+	--support-message: #0bb07b;
+	--support-message: #ffad0d;
+	--support-message: #f03d3d;
+	--support-message: #e7e9ed;
+
+	/*Shadow*/
+
+	--shadow-s: 0px 2px 4px rgba(11, 31, 77, 0.08);
+	--shadow-m: 0px 4px 8px rgba(11, 31, 77, 0.1);
+	--shadow-l: 0px 8px 16px rgba(11, 31, 77, 0.12);
+	--shadow-xl: 0px 12px 24px rgba(11, 31, 77, 0.14);
+	--shadow-xxl: 0px 16px 32px rgba(11, 31, 77, 0.16);
+}
