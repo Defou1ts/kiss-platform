@@ -1,0 +1,94 @@
+.button {
+	font-family: var(--font-family);
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 9px;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s ease;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.primary {
+	background: var(--brand-green);
+	color: var(--white);
+}
+
+.primary .icon {
+	fill: var(--white);
+}
+
+.primary:hover {
+	background: var(--brand-green-variant-01);
+}
+
+.ghost {
+	background: transparent;
+	border: 1px solid var(--brand-green);
+	color: var(--brand-green);
+}
+
+.ghost:hover {
+	background: var(--brand-green-variant-01);
+	color: var(--white);
+}
+
+.ghost:hover .icon {
+	fill: var(--white);
+}
+
+.ghost .icon {
+	fill: var(--brand-green);
+}
+
+.delete {
+	background: var(--brand-red-variant-02);
+	color: var(--white);
+}
+
+.delete .icon {
+	fill: var(--white);
+}
+
+.delete:hover {
+	background: var(--brand-red-variant-01);
+}
+
+.disabled {
+	pointer-events: none;
+	cursor: none;
+	background: var(--gray-10);
+	color: var(--gray-40);
+	border: none;
+}
+
+.disabled .icon {
+	fill: var(--gray-40);
+}
+
+.xs {
+	width: 130px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.s {
+	width: 210px;
+	height: 53px;
+}
+
+.l {
+	width: 210px;
+	height: 70px;
+}
+
+.xl {
+	width: 437px;
+	height: 70px;
+}

@@ -30,12 +30,12 @@ a {
 	--brand-black: #333333;
 
 	/*Brand and Complementary Color Variants*/
-	--brand-red-vartiant-01: #c5453e;
-	--brand-red-vartiant-02: #af3d37;
-	--brand-green-vartiant-01: #60aea8;
-	--brand-green-vartiant-02: #559b95;
-	--brand-yellow-vartiant-01: #e5b233;
-	--brand-yellow-vartiant-02: #cc9e2d;
+	--brand-red-variant-01: #c5453e;
+	--brand-red-variant-02: #af3d37;
+	--brand-green-variant-01: #60aea8;
+	--brand-green-variant-02: #559b95;
+	--brand-yellow-variant-01: #e5b233;
+	--brand-yellow-variant-02: #cc9e2d;
 	--white: #ffffff;
 
 	/*Grayscale*/
@@ -48,16 +48,27 @@ a {
 
 	/*Semantic Color*/
 	--support-message: #4070f4;
-	--support-message: #0bb07b;
-	--support-message: #ffad0d;
-	--support-message: #f03d3d;
-	--support-message: #e7e9ed;
+	--support-warning: #ffad0d;
+	--support-success: #0bb07b;
+	--support-error: #f03d3d;
+	--support-info: #3c4c70;
 
 	/*Shadow*/
-
 	--shadow-s: 0px 2px 4px rgba(11, 31, 77, 0.08);
 	--shadow-m: 0px 4px 8px rgba(11, 31, 77, 0.1);
 	--shadow-l: 0px 8px 16px rgba(11, 31, 77, 0.12);
 	--shadow-xl: 0px 12px 24px rgba(11, 31, 77, 0.14);
 	--shadow-xxl: 0px 16px 32px rgba(11, 31, 77, 0.16);
+
+	/*Toastify styles override*/
+
+	--toastify-color-success: var(--support-success);
+	--toastify-color-warning: var(--support-warning);
+	--toastify-color-info: var(--support-info);
+	--toastify-color-error: var(--support-error);
+
+	--toastify-toast-width: 350px;
+	--toastify-toast-min-height: 86px;
+	--toastify-font-family: var(--font-family);
+	--toastify-color-light: var(--support-message);
 }

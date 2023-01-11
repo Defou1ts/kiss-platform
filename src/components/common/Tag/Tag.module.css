@@ -1,0 +1,31 @@
+.tag {
+	width: 95px;
+	height: 29px;
+	text-align: center;
+	padding: 4px 0;
+	border-radius: 4px;
+}
+
+.send {
+	background: #4070f42c;
+	border: 1px solid var(--support-message);
+	color: var(--support-message);
+}
+
+.inProgress {
+	background: rgba(255, 173, 13, 0.2);
+	border: 1px solid var(--support-warning);
+	color: var(--support-warning);
+}
+
+.done {
+	background: rgba(11, 176, 123, 0.2);
+	border: 1px solid var(--support-success);
+	color: var(--support-success);
+}
+
+.error {
+background: rgba(240, 61, 61, 0.2);
+	border: 1px solid var(--support-error);
+	color: var(--support-error);
+}

@@ -1,0 +1,19 @@
+.h1 {
+	margin: 0;
+	font-size: 42px;
+	line-height: 21.6px;
+}
+
+.h2 {
+	margin: 0;
+	font-size: 36px;
+	line-height: 21.6px;
+}
+
+.normal {
+	font-weight: 400;
+}
+
+.bold {
+	font-weight: 700;
+}

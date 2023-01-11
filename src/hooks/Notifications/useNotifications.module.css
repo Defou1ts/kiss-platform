@@ -1,0 +1,20 @@
+.icon {
+	fill: var(--white);
+}
+
+.title {
+	margin: 0;
+	color: var(--white);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.description {
+	margin: 0;
+	margin-top: 5px;
+	color: var(--white);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 22px;
+}
