@@ -12,6 +12,7 @@
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 22px;
+	width: 100%;
 }
 
 .primary {
@@ -72,23 +73,23 @@
 }
 
 .xs {
-	width: 130px;
+	max-width: 130px;
 	height: 40px;
 	font-size: 14px;
 	line-height: 22px;
 }
 
 .s {
-	width: 210px;
+	max-width: 210px;
 	height: 53px;
 }
 
 .l {
-	width: 210px;
+	max-width: 210px;
 	height: 70px;
 }
 
 .xl {
-	width: 437px;
+	max-width: 437px;
 	height: 70px;
 }

@@ -7,10 +7,8 @@ import styles from "./TextField.module.css";
 import { ReactComponent as ProblemIcon } from "@icons/problem.svg";
 
 export const TextField = forwardRef(
-	({ className, onChange, placeholder, ...props }: TextFieldProps, ref: ForwardedRef<HTMLInputElement>) => {
+	({ error, className, onChange, placeholder, ...props }: TextFieldProps, ref: ForwardedRef<HTMLInputElement>) => {
 		const [value, setValue] = useState<string>("");
-
-		const error = true;
 
 		const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 			onChange && onChange(e);
