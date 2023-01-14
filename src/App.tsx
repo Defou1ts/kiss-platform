@@ -1,4 +1,4 @@
-import { Button, Checkbox, H, P, Radio, Search, Tag, TextField } from "@components";
+import { Button, Checkbox, H, P, Radio, Search, Switch, Tag, TextField } from "@components";
 import { ToastContainer } from "react-toastify";
 import { useNotifications } from "@hooks";
 import { NotifyType } from "types/notifications";
@@ -10,6 +10,7 @@ function App() {
 	const [checked, setChecked] = useState<boolean>(false);
 	const [value, setValue] = useState<string>("");
 	const [activeValue, setIsActiveValue] = useState<string>("");
+	const [switchActive, setSwitchActive] = useState<boolean>(false);
 
 	const values = ["Картошка", "Кетчуп", "Сырный"];
 
@@ -175,6 +176,11 @@ function App() {
 			<Checkbox />
 			<H tag="h1">Radio:</H>
 			{renderedRadios}
+			<H tag="h1">Switch:</H>
+			<Switch
+				isActive={switchActive}
+				onClick={() => setSwitchActive(!switchActive)}
+			/>
 		</div>
 	);
 }
