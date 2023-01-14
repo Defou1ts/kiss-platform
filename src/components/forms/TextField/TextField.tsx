@@ -1,5 +1,5 @@
 import { TextFieldProps } from "./TextField.props";
-import React, { ForwardedRef, forwardRef, useState } from "react";
+import React, { ForwardedRef, forwardRef } from "react";
 
 import cn from "classnames";
 import styles from "./TextField.module.css";
@@ -7,14 +7,7 @@ import styles from "./TextField.module.css";
 import { ReactComponent as ProblemIcon } from "@icons/problem.svg";
 
 export const TextField = forwardRef(
-	({ error, className, onChange, placeholder, ...props }: TextFieldProps, ref: ForwardedRef<HTMLInputElement>) => {
-		const [value, setValue] = useState<string>("");
-
-		const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-			onChange && onChange(e);
-			setValue(e.target.value);
-		};
-
+	({ error, value, className, placeholder, ...props }: TextFieldProps, ref: ForwardedRef<HTMLInputElement>) => {
 		return (
 			<div className={cn(className, styles.inputWrapper)}>
 				<div
@@ -27,7 +20,6 @@ export const TextField = forwardRef(
 				</div>
 				<input
 					value={value}
-					onChange={(e) => handleOnChange(e)}
 					ref={ref}
 					className={cn(styles.input, {
 						[styles.error]: error,

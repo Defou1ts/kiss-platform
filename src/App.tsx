@@ -1,10 +1,14 @@
-import { Button, H, P, Tag, TextField } from "@components";
+import { Button, Checkbox, H, P, Search, Tag, TextField } from "@components";
 import { ToastContainer } from "react-toastify";
 import { useNotifications } from "@hooks";
 import { NotifyType } from "types/notifications";
+import { useState } from "react";
 
 function App() {
 	const { notify } = useNotifications();
+
+	const [checked, setChecked] = useState<boolean>(false);
+	const [value, setValue] = useState<string>("");
 
 	const showNotify = (type: NotifyType) => {
 		notify({
@@ -131,9 +135,27 @@ function App() {
 			<P size="l">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cumque. SIZE L</P>
 			<P size="xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cumque. SIZE XL</P>
 
-			<TextField placeholder="E-mail" />
+			<TextField
+				value={value}
+				onChange={(e) => setValue(e.target.value)}
+				placeholder="E-mail"
+			/>
 			<TextField placeholder="Name" />
 			<TextField />
+			<Search />
+			<Checkbox
+				checked
+				disabled
+			/>
+			<Checkbox
+				checked
+				interminate
+			/>
+			<Checkbox
+				checked={checked}
+				onChange={(e) => setChecked(e.target.checked)}
+			/>
+			<Checkbox />
 		</div>
 	);
 }
