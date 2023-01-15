@@ -1,5 +1,5 @@
 import { TextFieldProps } from "./TextField.props";
-import React, { ForwardedRef, forwardRef } from "react";
+import { ForwardedRef, forwardRef } from "react";
 
 import cn from "classnames";
 import styles from "./TextField.module.css";

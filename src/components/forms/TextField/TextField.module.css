@@ -32,6 +32,7 @@
 }
 
 .floating {
+	z-index: -20;
 	opacity: 0;
 	height: 0;
 	background: var(--white);
@@ -58,4 +59,13 @@
 
 .floatingError {
 	color: var(--support-error);
+}
+
+@keyframes float {
+	from {
+		display: none;
+	}
+	to {
+		display: block;
+	}
 }
