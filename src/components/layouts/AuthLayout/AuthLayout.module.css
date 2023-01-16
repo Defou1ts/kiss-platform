@@ -1,0 +1,39 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: [start] 1fr [authblockstart] minmax(auto, 437px) [authblockend] 1.5fr [bgblockstart] 50% [end];
+}
+
+.authBlock {
+	padding: 68px 0px;
+	grid-column: authblockstart / authblockend;
+}
+
+.bgBlock {
+	grid-column: bgblockstart / end;
+	position: relative;
+	color: var(--white);
+	max-height: 100vh;
+	overflow: hidden;
+}
+
+.bg {
+	min-width: 100%;
+}
+
+.bgTitle {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	bottom: 25%;
+}
+
+.bgText {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	text-align: center;
+
+	bottom: 18%;
+}

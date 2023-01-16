@@ -1,4 +1,5 @@
 .p {
+	display: inline-block;
 	font-size: 18px;
 	line-height: 21.6px;
 }
@@ -15,6 +16,6 @@
 	font-weight: 500;
 }
 
-.l {
+.xl {
 	font-weight: 700;
 }

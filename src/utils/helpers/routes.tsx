@@ -1,15 +1,15 @@
 import { FORGOT_PASSWORD_ROUTE, LOGIN_ROUTE, SIGN_UP_ROUTE } from "@utils";
 import { IRoute } from "@types";
-import { LoginPage } from "@pages";
+import { AuthPage } from "@pages";
 
 export const unauthorizedRoutes: IRoute[] = [
 	{
 		path: SIGN_UP_ROUTE,
-		Component: <></>,
+		Component: <AuthPage type="signup" />,
 	},
 	{
 		path: LOGIN_ROUTE,
-		Component: <LoginPage />,
+		Component: <AuthPage type="login" />,
 	},
 	{
 		path: FORGOT_PASSWORD_ROUTE,

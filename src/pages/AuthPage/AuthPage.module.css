@@ -1,0 +1,26 @@
+.text {
+	color: var(--gray-30);
+}
+
+.link {
+	margin-left: 5px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	color: var(--brand-green);
+	transition: all 0.2s ease;
+}
+
+.link:hover {
+	color: var(--brand-green-variant-01);
+}
+
+.logo {
+	margin: 57px auto 0 auto;
+	display: block;
+}
+
+.info {
+	margin: 57px 0 52px 0;
+	text-align: center;
+}
