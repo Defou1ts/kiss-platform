@@ -1,14 +1,13 @@
 import { toast, ToastOptions } from "react-toastify";
-import { NotifyType, NotifyOptions, NotifyFunction, UseNotification } from "types/notifications";
-import React from "react";
-
-import styles from "./useNotifications.module.css";
+import { NotifyType, NotifyOptions, NotifyFunction, UseNotification } from "@types";
 
 import { ReactComponent as SuccessIcon } from "@icons/checkCircleIcon.svg";
 import { ReactComponent as MessageIcon } from "@icons/message.svg";
 import { ReactComponent as WarningIcon } from "@icons/alert.svg";
 import { ReactComponent as ErrorIcon } from "@icons/error.svg";
 import { ReactComponent as InfoIcon } from "@icons/information.svg";
+
+import styles from "./useNotifications.module.css";
 
 export const useNotifications: UseNotification = () => {
 	const defaultOptions: ToastOptions = {
