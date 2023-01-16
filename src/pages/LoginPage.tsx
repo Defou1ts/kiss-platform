@@ -1,9 +1,7 @@
-import { LoginForm } from "@components";
+import { LoginForm, withAuthLayout } from "@components";
 
-export const LoginPage = () => {
-	return (
-		<>
-			<LoginForm />
-		</>
-	);
+const LoginPage = () => {
+	return <LoginForm />;
 };
+
+export default withAuthLayout(LoginPage);

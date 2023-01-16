@@ -8,5 +8,6 @@ import { Checkbox } from "./forms/CheckBox/Checkbox";
 import { Radio } from "./forms/Radio/Radio";
 import { Switch } from "./forms/Switch/Switch";
 import { LoginForm } from "./forms/LoginForm/LoginForm";
+import { withAuthLayout } from "./layouts/AuthLayout/AuthLayout";
 
-export { Button, P, H, Tag, TextField, Search, Checkbox, Radio, Switch, LoginForm };
+export { Button, P, H, Tag, TextField, Search, Checkbox, Radio, Switch, LoginForm, withAuthLayout };
