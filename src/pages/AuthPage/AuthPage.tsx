@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { LoginForm, P, withAuthLayout } from "@components";
+import { LoginForm, P, RegisterForm, withAuthLayout } from "@components";
 import { LOGIN_ROUTE, SIGN_UP_ROUTE } from "@utils";
 import { AuthPageProps } from "./AuthPage.props";
 
@@ -12,7 +12,7 @@ const AuthPage = ({ type }: AuthPageProps) => {
 	const questionText = type === "login" ? "Don't you have an account?" : "You have an account?";
 	const linkHref = type === "login" ? SIGN_UP_ROUTE : LOGIN_ROUTE;
 	const linkText = type === "login" ? "Create an account" : "Login";
-	const form = type === "login" ? <LoginForm /> : null;
+	const form = type === "login" ? <LoginForm /> : <RegisterForm />;
 
 	return (
 		<>

@@ -9,7 +9,7 @@ import { ForwardedRef, forwardRef } from "react";
 
 export const Checkbox = forwardRef(
 	(
-		{ value, interminate = false, checked, disabled, className, ...props }: CheckboxProps,
+		{ error, value, interminate = false, checked, disabled, className, ...props }: CheckboxProps,
 		ref: ForwardedRef<HTMLInputElement>
 	) => {
 		return (
@@ -18,6 +18,7 @@ export const Checkbox = forwardRef(
 					[styles.checked]: checked,
 					[styles.disabled]: disabled,
 					[styles.interminate]: interminate,
+					[styles.error]: error,
 				})}
 			>
 				<input

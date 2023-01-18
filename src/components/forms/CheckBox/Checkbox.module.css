@@ -39,6 +39,10 @@
 	background: var(--gray-20);
 }
 
+.error {
+	border: 1.8px solid var(--support-error);
+}
+
 .checkbox {
 	opacity: 0;
 	position: relative;

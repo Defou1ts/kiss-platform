@@ -5,6 +5,7 @@ import cn from "classnames";
 import styles from "./TextField.module.css";
 
 import { ReactComponent as ProblemIcon } from "@icons/problem.svg";
+import { ReactComponent as ErrorIcon } from "@icons/closeCircleIcon.svg";
 
 export const TextField = forwardRef(
 	({ error, value, className, placeholder, ...props }: TextFieldProps, ref: ForwardedRef<HTMLInputElement>) => {
@@ -27,7 +28,13 @@ export const TextField = forwardRef(
 					placeholder={placeholder}
 					{...props}
 				/>
-				{error && <ProblemIcon className={styles.errorIcon} />}
+				{error && <ProblemIcon className={styles.problemIcon} />}
+				{error && (
+					<div className={styles.errorBlock}>
+						<ErrorIcon className={styles.errorIcon} />
+						{error.message}
+					</div>
+				)}
 			</div>
 		);
 	}

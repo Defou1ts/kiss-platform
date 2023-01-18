@@ -1,0 +1,30 @@
+.form {
+	grid-template-columns: 437px;
+	display: grid;
+	gap: 20px;
+}
+
+.options {
+	display: grid;
+	grid-template-columns: 20px 1fr auto;
+	gap: 12px;
+	align-items: center;
+}
+
+.remember {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: var(--gray-30);
+}
+
+.link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: var(--brand-green);
+}
+
+.link:hover {
+	color: var(--brand-green-variant-01);
+}

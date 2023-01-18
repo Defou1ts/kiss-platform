@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button, Checkbox, TextField } from "@components";
 import { FORGOT_PASSWORD_ROUTE } from "@utils";
 import { ILoginForm, LoginFormProps } from "./LoginForm.props";
+import { useNotifications } from "@hooks";
 
 import cn from "classnames";
 import styles from "./LoginForm.module.css";
@@ -15,9 +16,16 @@ export const LoginForm = ({ className, ...props }: LoginFormProps) => {
 		reset,
 	} = useForm<ILoginForm>();
 
+	const { notify, ToastContainer } = useNotifications();
+
 	const onSubmit = async (formData: ILoginForm) => {
 		console.log(formData);
 		reset();
+		notify({
+			title: "Login",
+			description: "Great! You're successfully logged in!",
+			type: "success",
+		});
 	};
 
 	return (
@@ -88,6 +96,7 @@ export const LoginForm = ({ className, ...props }: LoginFormProps) => {
 					</Link>
 				</div>
 			</div>
+			<ToastContainer />
 		</form>
 	);
 };

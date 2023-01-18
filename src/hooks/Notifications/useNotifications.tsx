@@ -1,4 +1,4 @@
-import { toast, ToastOptions } from "react-toastify";
+import { toast, ToastOptions, ToastContainer } from "react-toastify";
 import { NotifyType, NotifyOptions, NotifyFunction, UseNotification } from "@types";
 
 import { ReactComponent as SuccessIcon } from "@icons/checkCircleIcon.svg";
@@ -67,5 +67,5 @@ export const useNotifications: UseNotification = () => {
 		}
 	};
 
-	return { notify };
+	return { notify, ToastContainer };
 };
