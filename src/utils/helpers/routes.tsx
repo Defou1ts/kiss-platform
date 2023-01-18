@@ -1,6 +1,6 @@
 import { FORGOT_PASSWORD_ROUTE, LOGIN_ROUTE, NOT_FOUND_ROUTE, SIGN_UP_ROUTE } from "@utils";
 import { IRoute } from "@types";
-import { AuthPage } from "@pages";
+import { AuthPage, ForgotPasswordPage } from "@pages";
 import { Navigate } from "react-router-dom";
 
 export const unauthorizedRoutes: IRoute[] = [
@@ -14,7 +14,7 @@ export const unauthorizedRoutes: IRoute[] = [
 	},
 	{
 		path: FORGOT_PASSWORD_ROUTE,
-		Component: <></>,
+		Component: <ForgotPasswordPage />,
 	},
 	{
 		path: "*",

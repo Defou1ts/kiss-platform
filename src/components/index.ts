@@ -9,6 +9,21 @@ import { Radio } from "./forms/Radio/Radio";
 import { Switch } from "./forms/Switch/Switch";
 import { LoginForm } from "./forms/LoginForm/LoginForm";
 import { RegisterForm } from "./forms/RegisterForm/RegisterForm";
+import { ForgotPasswordForm } from "./forms/ForgotPasswordForm/ForgotPasswordForm";
 import { withAuthLayout } from "./layouts/AuthLayout/AuthLayout";
 
-export { Button, P, H, Tag, TextField, Search, Checkbox, Radio, Switch, LoginForm, withAuthLayout, RegisterForm };
+export {
+	Button,
+	P,
+	H,
+	Tag,
+	TextField,
+	Search,
+	Checkbox,
+	Radio,
+	Switch,
+	LoginForm,
+	withAuthLayout,
+	RegisterForm,
+	ForgotPasswordForm,
+};

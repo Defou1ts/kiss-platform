@@ -1,3 +1,4 @@
 import AuthPage from "./AuthPage/AuthPage";
+import { ForgotPasswordPage } from "./ForgotPasswordPage/ForgotPasswordPage";
 
-export { AuthPage };
+export { AuthPage, ForgotPasswordPage };
